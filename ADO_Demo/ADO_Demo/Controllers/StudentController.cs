@@ -15,14 +15,12 @@ namespace ADO_Demo.Controllers
         public ActionResult Index()
         {
             return View(Student_BAL.GetUserAll());
-
-            //return Json(Student_BAL.GetUserAll(), JsonRequestBehavior.AllowGet);
         }
 
-        //public JsonResult FetchStudents()
-        //{
-        //    return Json(Student_BAL.GetUserAll(), JsonRequestBehavior.AllowGet);
-        //}
+        public JsonResult FetchStudents()
+        {
+            return Json(Student_BAL.GetUserAll(), JsonRequestBehavior.AllowGet);
+        }
 
         //public JsonResult FetchStudents()
         //{

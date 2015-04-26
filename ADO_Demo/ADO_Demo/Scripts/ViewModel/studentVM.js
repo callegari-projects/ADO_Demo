@@ -3,17 +3,18 @@
 $(function () {
     ko.applyBindings(StudentVM);
     StudentVM.getStudents();
-    
+
 });
 
 //View Model
 var StudentVM = {
     Students: ko.observableArray([]),
     getStudents: function () {
+     
         var self = this;
         $.ajax({
             type: "GET",
-            url: '/Student',
+            url: '/Student/FetchStudents',
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (data) {

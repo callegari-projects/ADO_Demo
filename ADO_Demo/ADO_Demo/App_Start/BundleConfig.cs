@@ -23,6 +23,9 @@ namespace ADO_Demo
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                 "~/Scripts/knockout-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/viewmodel").Include(
+                "~/Scripts/ViewModel/studentVM.js"));
+
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
