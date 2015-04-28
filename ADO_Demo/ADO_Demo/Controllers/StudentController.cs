@@ -14,7 +14,7 @@ namespace ADO_Demo.Controllers
         // GET: ADO_Demo
         public ActionResult Index()
         {
-            return View(Student_BAL.GetUserAll());
+            return View();
         }
 
         public JsonResult FetchStudents()

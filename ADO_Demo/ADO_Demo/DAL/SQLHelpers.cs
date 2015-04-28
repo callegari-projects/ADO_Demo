@@ -24,7 +24,11 @@ namespace ADO_Demo.SQLHelpers
 
 
         private static Dictionary<string, string> _connectionStringOverrides;
+
+
         //Singleton Property
+
+
         private static Dictionary<string, string> ConnectionStringOverrides
         {
             get
@@ -199,6 +203,8 @@ namespace ADO_Demo.SQLHelpers
         }
 
         //Extension Methods
+
+
         /// <summary>
         /// Gets a column value as string. If column is missing or NULL it returns the default. Optional bool indicates if empty strings should receive the default (by passing false, empty strings are replaced with the default)
         /// </summary>
@@ -351,6 +357,8 @@ namespace ADO_Demo.SQLHelpers
             return defaultIfNull; //parse failed, return default
         }
 
+
+
         //Older Static Methods
 
         /// <summary>
@@ -470,6 +478,8 @@ namespace ADO_Demo.SQLHelpers
 
             return defaultIfNull; //parse failed, return default
         }
+
+
 
 
         // DataReader

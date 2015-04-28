@@ -176,7 +176,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helpers\SQLHelpers.cs" />
+    <Compile Include="DAL\SQLHelpers.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Student.cs" />
   </ItemGroup>
@@ -243,7 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="DAL\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -11,15 +11,14 @@ namespace ADO_Demo.BAL
 
         public static List<Student>  GetUserAll()
         {
-
-            //List<Student> Student = new List<Student>();
             
             DataTable dt = new DataTable();
 
             dt = SQLHelpers.SQLHelpers.GetTable("DemoConnection", "[dbo].[GetStudent_all]", null, true);
-
+            
 
             List<Student> studentList = new List<Student>();
+
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 Student student = new Student();
@@ -35,11 +34,8 @@ namespace ADO_Demo.BAL
                 student.School = dt.Rows[i]["School"].ToString();
                 student.Domicile = dt.Rows[i]["Domicile"].ToString();
 
-
-
                 studentList.Add(student);
             } 
-
 
             return studentList;
 
